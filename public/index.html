@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width,initial-scale=1.0">
+  <link rel="icon" href="<%= BASE_URL %>favicon.ico">
+  <title>Mini Project SOC</title>
+  <style>
+    .back-video {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    object-fit: cover; 
+    }
+  </style>
+</head>
+<body>
+  <video autoplay loop muted playsinline class="back-video">
+    <source src="video1.mp4" type="video/mp4">
+  </video>
+  <noscript>
+    <strong>We're sorry but <%= htmlWebpackPlugin.options.title %> doesn't work properly without JavaScript enabled. Please enable it to continue.</strong>
+  </noscript>
+  <div id="app"></div>
+  <!-- built files will be auto injected -->
+
+  <script>
+    (function (w, d, s, o, f, js, fjs) {
+      w["botsonic_widget"] = o;
+      w[o] =
+        w[o] ||
+        function () {
+          (w[o].q = w[o].q || []).push(arguments);
+        };
+      (js = d.createElement(s)), (fjs = d.getElementsByTagName(s)[0]);
+      js.id = o;
+      js.src = f;
+      js.async = 1;
+      fjs.parentNode.insertBefore(js, fjs);
+    })(window, document, "script", "Botsonic", "https://widget.writesonic.com/CDN/botsonic.min.js");
+    Botsonic("init", {
+      serviceBaseUrl: "https://api.botsonic.ai",
+      token: "74e39601-1568-4d0a-821f-8477eb3b2941",
+    });
+  </script>
+  
+  <script>
+    // Check if the referer is not the login page
+    if (document.referrer.indexOf('login.html') === -1 ) {
+      // Redirect to the login page if not coming from the login page
+      window.location.href = 'login.html';
+    }
+  </script>
+</body>
+</html>
