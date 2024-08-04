@@ -1,13 +1,13 @@
 {
-  "name": "@fmidev/smartmet-alert-client",
+  "name": "@surendrakumar/flood-predictor",
   "version": "3.8.7",
   "description": "Web application for viewing weather and flood alerts",
-  "author": "Finnish Meteorological Institute",
+  "author": "ChennamsettiSurendraKumar",
   "license": "MIT",
   "main": "dist/SmartMetAlertClient.umd.min.js",
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/fmidev/smartmet-alert-client.git"
+    "url": "git+https://github.com/SurendraKumarKing/Flood-Predictor"
   },
   "scripts": {
     "serve": "vue-cli-service serve --skip-plugins @vue/cli-plugin-eslint",
