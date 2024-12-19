@@ -1,6 +1,6 @@
-# SmartMet Alert Client (smartmet-alert-client)
+# Weather Predictor 
 
-SmartMet Alert Client is a customizable map visualizer for weather, flood and other alerts.
+Weather Predictor is a customizable map visualizer for weather, flood and other alerts.
 
 ![Screenshot](./screenshot.png)
 
